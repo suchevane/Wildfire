@@ -1,0 +1,52 @@
+<!doctype html>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename="wildfire.css") }}">
+
+<a href="//localhost:5000"><img src="http://i.imgur.com/WVCuwki.png" class="ony2"></img></a>
+
+<div class="outline" style=padding-bottom:75px>
+<div class="trainerhead">
+{{ title }}
+</div>
+<hr>
+<div class="rinfobox">
+	<div style=color:#FFD100></br></br></br>Find this trainer on Wowhead! </br><a href="//www.wowhead.com/search?q={{ trainersplit }}"><img src="http://i.imgur.com/FEw9xQk.png" style=height:20px width:20px></img></a>
+</div>
+	</div>
+
+<div class="linfobox" style=padding-top:50px><img src="http://i.imgur.com/qL5uq.jpg" style=max-height:200px></img></div>
+
+<div class="pets">Pet #1</div>
+	<div class="trainerpet">
+	{{ pet_one }}
+{% if islist1==True %}
+</br>{{ pet_one_a }}
+{% endif %}
+	</div>
+	</br>
+
+<div class="pets">Pet #2</div>
+	<div class="trainerpet">
+	{{ pet_two }}
+{% if islist2==True %}
+</br>{{ pet_two_a }}
+{% endif %}
+	</div>
+	</br>
+
+<div class="pets">Pet #3</div>
+	<div class="trainerpet">
+	{{ pet_three }}
+{% if islist3==True %}
+</br>{{ pet_three_a }}
+{% endif %}
+	</div>
+
+</div>
+</br>
+
+<div class="outline">
+<div class="pets">Strategy:</div>
+<div class="strat">{{ strat }}</div>
+</div>
+

@@ -1,0 +1,36 @@
+<!doctype html>
+<title>Wildfire: Counters</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename="wildfire.css") }}">
+
+<h2>
+{{ title }}
+</h2>
+<div class="counters2">
+<h3>Pet #1</h3>
+	<div class="counters1">
+	{{ pet_one }}
+{% if islist1==True %}
+</br>{{ pet_one_a }}
+</br>{{ pet_one_b }}
+{% endif %}
+	</div>
+	</br>
+<h3>Pet #2</h3>
+	<div class="counters1">
+	{{ pet_two }}
+{% if islist2==True %}
+</br>{{ pet_two_a }}
+</br>{{ pet_two_b }}
+{% endif %}
+	</div>
+	</br>
+<h3>Pet #3</h3>
+	<div class="counters1">
+	{{ pet_three }}
+{% if islist3==True %}
+</br>{{ pet_three_a }}
+</br>{{ pet_three_b }}
+{% endif %}
+	</div>
+</div>
+

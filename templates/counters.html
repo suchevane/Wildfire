@@ -1,0 +1,27 @@
+<!doctype html>
+<head> <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script><script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script></head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename="wildfire.css") }}">
+
+<a href="//localhost:5000"><img src="http://i.imgur.com/WVCuwki.png" class="ony2"></img></a>
+
+<div class="outline" style=padding-bottom:200px>
+<h2>
+{{ details }}
+</h2>
+<div class="trainerpet">
+<lu class="center">
+	<li>Weak Against <a href="{{ url_for('counter', pet=weak.lower()) }}">{{ weak  }}</a> Attacks</li>
+	<li>Strong Against <a href="{{ url_for('counter', pet=defend.lower()) }}">{{ defend }}</a> Attacks</li>
+</div>
+<h2>Power Pets</h2>
+<div class="trainerpet">
+<lu class="center">
+	<li><a href="//www.wowhead.com/npc={{ link1 }}"></a></li>
+	<li><a href="//www.wowhead.com/npc={{ link2 }}"></a></li>
+	<li><a href="//www.wowhead.com/npc={{ link3 }}"></a></li>
+	<li><a href="//www.wowhead.com/npc={{ link4 }}"></a></li>
+	<li><a href="//www.wowhead.com/npc={{ link5 }}"></a></li>
+</div>
+</br>
+<div class="trainerpet" style=font-size:10px>
+<a href="//www.wowhead.com/petspecies={{ wh_link }}?filter=cr=9;crs=2;crv=0">All Tameable {{ pet_type }} Pets</a></div></style>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='wildfire.css') }}">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip1").click(function(){
+    $("#pandas").slideToggle("slow");
+  });
+  $("#flip2").click(function(){
+    $("#spirits").slideToggle("slow");
+  });
+  $("#flip3").click(function(){
+    $("#fable").slideToggle("slow");
+  });
+});
+</script>
+
+<img src="http://i.imgur.com/rG5PPaI.png" class="ony"></img>
+
+
+	
+	<div class="outline">
+<h2>Pet Type Counters</h2>
+<hr>
+</br>
+	<a href="{{ url_for('counter', pet='flying') 				}}"><img src="http://i.imgur.com/Nbd58RI.png"></img>Flying</a></br>
+
+	<a href="{{ url_for('counter',pet='magic') 				}}"><img src="http://i.imgur.com/nlzHyzt.png"></img>Magic</a></br>
+
+	<a href="{{ url_for('counter',pet='dragonkin') 				}}"><img src="http://i.imgur.com/desj18A.png"></img>Dragonkin</a></br>
+
+	<a href="{{ url_for('counter',pet='humanoid') 				}}"><img src="http://i.imgur.com/Mxi91pm.png"></img>Humanoid</a></br>
+
+	<a href="{{ url_for('counter',pet='beast') 				}}"><img src="http://i.imgur.com/lJ4epd4.png"></img>Beast</a></br>
+
+	<a href="{{ url_for('counter',pet='critter') 				}}"><img src="http://i.imgur.com/VFaolUu.png"></img>Critter</a></br>
+
+	<a href="{{ url_for('counter',pet='aquatic') 				}}"><img src="http://i.imgur.com/LlUBHYZ.png"></img>Aquatic</a></br>
+
+	<a href="{{ url_for('counter',pet='elemental') 				}}"><img src="http://i.imgur.com/NCFZM6Z.png"></img>Elemental</a></br>
+
+	<a href="{{ url_for('counter',pet='mechanical') 			}}"><img src="http://i.imgur.com/lwEAGxI.png"></img>Mechanical</a></br>
+
+	<a href="{{ url_for('counter',pet='undead') 				}}"><img src="http://i.imgur.com/cy2ttXi.png"></img>Undead</a></br>
+
+	
+</div>
+</br>
+
+	
+	<div class="outline">
+<h2>Trainer Lineups</h2>
+<hr></br>
+
+<div id="flip1" style=font-size:16px>Pandaria Battle Tamers</div><div id="pandas">
+	<a href="{{ url_for('dreamteam',trainer='Hyuna') 			}}">Hyuna of the Shrines</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Nishi') 			}}">Farmer Nishi</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Moruk') 			}}">Mo'ruk</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Yon') 				}}">Courageous Yon</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Zusshi') 			}}">Seeker Zusshi</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Shu') 				}}">Wastewalker Shu</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Aki') 				}}">Aki the Chosen</a></div></br>
+<div id="flip2" style=font-size:16px>Pandaren Spirit Tamers</div><div id="spirits">
+	<a href="{{ url_for('dreamteam',trainer='Thundering') 			}}">Thundering Pandaren Spirit</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Flowing') 			}}">Flowing Pandaren Spirit</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Burning') 			}}">Burning Pandaren Spirit</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Whispering') 			}}">Whispering Pandaren Spirit</a></div></br>
+<div id="flip3">Beasts of Fable</div>
+<div id="fable">
+	<a href="{{ url_for('dreamteam',trainer='Kawi') 			}}">Kawi the Gorger</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Kafi') 			}}">Kafi</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Dos-Ryga') 			}}">Dos-Ryga</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Nitun') 			}}">Nitun</a></br></br>
+	<a href="{{ url_for('dreamteam',trainer='Lucky Yi') 			}}">Lucky Yi</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Greyhoof') 			}}">Greyhoof</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Skitterer') 			}}">Skitterer Xi'a</a></br></br>
+	<a href="{{ url_for('dreamteam',trainer='Gorespine') 			}}">Gorespine</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Greyhoof') 			}}">Greyhoof</a></br>
+	<a href="{{ url_for('dreamteam',trainer='Tiun') 			}}">Ti'un the Wanderer</a></br>				</div>
+
+</div>

@@ -1,0 +1,173 @@
+body	{  
+font-family: Arial,sans-serif; 
+background-color: #000000; 
+color: #ffffff;
+text-align: center;
+font-size: 14px;
+}
+
+a {
+color: #FFD100;
+cursor: pointer;
+}
+
+a:hover {
+color: white;
+}
+
+hr {
+color: #404040;
+margin-bottom: 5px;
+}
+
+h1 {
+text-align: center;
+background: #101010;
+border: 2px solid #404040;
+border-radius: 10px;
+padding: 20px;
+}
+
+h2 {
+color: #FFD100;
+}
+
+h3 {
+padding: 5px;
+}
+
+.counters1 {
+background: #101010; 
+border: 2px solid #404040;
+border-radius: 10px;
+padding: 20px
+}
+
+.outline {
+background: #202020;
+border: 2px solid #404040;
+border-radius: 10px;
+padding: 20px;
+padding-top: 10px;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.counters3 {
+background: #101010;
+border: 2px solid #404040;
+border-radius: 10px;
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.trainerpet {
+background: #101010;
+border: 2px solid #404040;
+border-radius: 10px;
+padding: 10px;
+width: 40%;
+margin-right: auto;
+margin-left: auto;
+}
+
+.strat {
+width: 40%;
+margin-right: auto;
+margin-left: auto;
+background: #101010;
+border: 2px solid #404040;
+border-radius: 10px;
+padding: 10px;
+}
+
+.rinfobox {
+float: right;
+padding: 10px;
+margin-top: 25px;
+width: 20%;
+height: 250px;
+background-color: black;
+border: 2px solid #404040;
+border-radius: 10px;
+}
+
+.linfobox {
+float: left;
+padding: 10px;
+width: 14%;
+height: 250px;
+}
+
+.ony {
+float: top;
+padding-top: 20px;
+}
+
+.ony2 {
+float:left, top;
+}
+
+.trainerhead {
+color: #FFD100;
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+padding-bottom: 10px;
+}
+
+.sectionhead {
+font-size:16px;
+font-weight:bold;
+border: 2px solid #404040;
+border-radius: 10px;
+width: 30%;
+background: #101010;
+margin-left: auto;
+margin-right: auto;
+padding:5px;
+}
+
+ .icon-egg {
+float: left;
+}
+
+.pets {
+font-size: 18px;
+color: #FFD100;
+padding: 5px;
+}
+
+.center {
+  list-style: none;
+  text-align: center;
+}
+.center li:before {
+  content: "\2022 "
+}
+
+#pandas, #spirits, #fable, #flip1, #flip2, #flip3 {
+border: 2px solid #404040;
+border-radius: 10px;
+background: #101010;
+margin-left: auto;
+margin-right: auto;
+}
+
+#flip1, #flip2, #flip3 {
+font-size:16px;
+font-weight:bold;
+padding: 5px;
+width: 25%;
+}
+
+#pandas, #spirits, #fable
+{
+padding:10px;
+display:none;
+width:22%;
+}
+
+.bold {
+font-weight:bold;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<head> <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script><script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script></head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename="wildfire.css") }}">
+
+<a href="//localhost:5000"><img src="http://i.imgur.com/WVCuwki.png" class="ony2"></img></a>
+
+<div class="outline" style=padding-bottom:75px>
+<div class="trainerhead">Suggested Pets: <a href="//www.wowhead.com/npc={{ title }}"></a>
+</div>
+<hr>
+
+<div class="rinfobox">
+<h2 style=font-size:16px>{{ trainer }}'s Pets</h2>
+	
+		<hr><a href="//www.wowhead.com/npc={{ link1 }}"></a></style>
+		Type: <a href="{{ url_for('counter', pet=ttype1.lower()) }}">{{ ttype1 }}</a><hr>
+	
+		<a href="//www.wowhead.com/npc={{ link2 }}"></a>
+		Type: <a href="{{ url_for('counter', pet=ttype2.lower()) }}">{{ ttype2 }}</a><hr>
+	
+		<a href="//www.wowhead.com/npc={{ link3 }}"></a>
+		Type: <a href="{{ url_for('counter', pet=ttype3.lower()) }}">{{ ttype3 }}</a><hr>
+</div>
+
+<div class="linfobox" style=padding-top:50px><img src="http://i.imgur.com/qL5uq.jpg" style=max-height:200px></img></div>
+<div class="pets"></br></br></br></br></br></div>
+</br>
+
+<div class="outline">
+<div class="pets">Strategy:</div>
+<div class="strat" style=margin-left:25%>{{ strat }}</div></style>
+</div></style>
+
